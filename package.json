@@ -1,0 +1,28 @@
+{
+  "name": "domain-resolver",
+  "version": "0.0.1",
+  "description": "Resolves a domain (e.g. 'yandex.ru') into the first found AAAA (IPv6) record or A (IPv4).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sullenor/domain-resolver.git"
+  },
+  "keywords": [
+    "dns",
+    "ipv6",
+    "ipv4",
+    "lookup"
+  ],
+  "author": {
+    "name": "Alexey Litvinov",
+    "email": "iamhoneyboy@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sullenor/domain-resolver/issues"
+  },
+  "homepage": "https://github.com/sullenor/domain-resolver"
+}
