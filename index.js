@@ -7,18 +7,10 @@ var EventEmitter = require('events').EventEmitter;
 
 /**
  * @param  {String}   host
- * @param  {Object}   options
  * @param  {Function} callback
  * @return {Resolver}
  */
-function Resolver(host, options, callback) {
-  if (typeof options === 'function') {
-    callback = options;
-    options = {};
-  } else {
-    options = options || {};
-  }
-
+function Resolver(host, callback) {
   EventEmitter.call(this);
 
   var that = this;
