@@ -1,7 +1,5 @@
 # dns-lookup
 
-## Goal
-
 **dns-lookup** resolves a domain (e.g. 'yandex.ru') into the first found AAAA (IPv6) record or, if not found, into the first found A (IPv4) record.
 
 If you don't care about order, you may want to use method `lookup` from `dns` module.
