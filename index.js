@@ -63,7 +63,7 @@ module.exports = function (host, options, callback) {
     options = undefined;
   }
 
-  if (typeof options !== 'object') {
+  if (!options || typeof options !== 'object') {
     options = {};
   }
 
