@@ -7,10 +7,11 @@ var EventEmitter = require('events').EventEmitter;
 
 /**
  * @param  {String}   host
+ * @param  {Object}   options
  * @param  {Function} callback
  * @return {Resolver}
  */
-function Resolver(host, callback) {
+function Resolver(host, options, callback) {
   EventEmitter.call(this);
 
   var that = this;
@@ -57,5 +58,14 @@ Resolver.prototype._lookup = function (host, family) {
  * @return {Resolver}
  */
 module.exports = function (host, options, callback) {
+  if (typeof options === 'function') {
+    callback = options;
+    options = undefined;
+  }
+
+  if (!options || typeof options !== 'object') {
+    options = {};
+  }
+
   return new Resolver(host, options, callback);
 };

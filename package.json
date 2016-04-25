@@ -1,6 +1,6 @@
 {
   "name": "dns-lookup",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Resolves a domain (e.g. 'yandex.ru') into the first found AAAA (IPv6) record or A (IPv4).",
   "main": "index.js",
   "scripts": {
